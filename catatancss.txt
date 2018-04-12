@@ -1,0 +1,42 @@
+- CSS syntax : 
+  <selector> {<declaration>;<declaration>;...;<declaration>;}
+  <declaration> -> <property>:<value>
+  <selector> -> <htmlelementname>|.<elementclassname>|#<elementidname>|[more..]
+
+- element selector (<selector>) digunakan untuk menemukan HTML element berdasarkan nama, id, class, atribut, dll dari elemen tersebut.
+
+- property is css property dan valuenya
+
+- selector juga bisa di group caranya : h1, h2, p {<declaration>}
+
+- remember it! html punya property untuk background sebagai berikut:
+  -- background-color
+  -- background-image
+  -- background-repeat
+  -- background-attachment
+  -- background-position
+- bisa disingkat juga(shorthand) sebagai berikut secara terurut: background: {}
+
+- border punya tiga property color, widht, style
+
+- panjang element merupakan panjang widht+padding+border+margin atau height
+
+- css box model: margin, border, padding, content area
+
+- widht dan height hanya akan merubah ukuran content area
+
+- outline widht, style, color. offset
+
+- text align, decoration, indent, transform, shadow.
+- letter-spacing, word-spacing, direction, line-height
+
+- font family, size, style, variant, weight.
+
+- a:link, a:hover, a:active, a:visited
+
+- ada yang namanya pseudo-class dan ada yang namanya pseudo-element di css3.. pseudo-class pake : sedangkan pseudo-element pake ::
+- pseudo-class digunakan untuk merubah state
+- pseudo-element digunakan untuk merubah element tambahan.
+- listnya ada di webnya. Kalau bingun lihat aja website nya
+
+- kita bisa milih suatu element berdasarkan atributnya dengan menggunkan, ini: <nama>[<namaatribut>=<nilai>] {<declaration>}
