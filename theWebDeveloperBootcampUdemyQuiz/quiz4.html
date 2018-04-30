@@ -1,0 +1,51 @@
+<!-- 
+    Created By: Enki Probo S.
+    Description:
+        Simple form
+ -->
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <title>Simple Form</title>
+     </head>
+     <body>
+         <h1>Register</h1>
+         <form>
+             <label for="firstName">First Name: </label>
+             <input id="firstName" name="firstname" type="text" placeholder="John" required>
+             <label for="lastName">Last Name: </label>
+             <input id="lastName" name="lastname" type="text" placeholder="Smith" required>
+             <br><!-- I use different style when using label below, but it does the same as above label style-->
+             <label>Male <input name="gender" value="male" type="radio"></label>
+             <label>Female <input name="gender" value="female" type="radio"></label>
+             <label>Other <input name="gender" value="other" type="radio"></label>
+             <br>
+             <label for="email">Email: </label>
+             <input id="email" name="email" type="email" placeholder="your email" required>
+             <label for="password">Password: </label>
+             <input id="password" name="password" type="password" pattern=".{5,10}" title="5 to 10 character is allowed" required>
+             <br>
+             <label for="birthday">Birthday: </label>
+             <select name="month" id="birthday">
+                 <option value="nothing">Month</option>
+                 <option value="jan">Jan</option>
+                 <option value="feb">Feb</option>
+             </select>
+             <select name="day" id="birthday">
+                    <option value="nothing">Day</option>
+                    <option>1</option> <!-- I dont use value attribute coz it just the same as the content of the element-->
+                    <option>2</option> <!-- I dont use value attribute coz it just the same as the content of the element-->
+             </select>
+             <select name="year" id="birthday">
+                    <option value="nothing">Year</option>
+                    <option>1992</option> <!-- I dont use value attribute coz it just the same as the content of the element-->
+                    <option>1993</option> <!-- I dont use value attribute coz it just the same as the content of the element-->
+             </select>
+             <br>
+             <label for="termsandconditions">I agree to the terms and conditions </label>
+             <input id="termsandconditions" type="checkbox" name="tac">
+             <br>
+             <input type="submit">
+         </form>
+     </body>
+ </html>
