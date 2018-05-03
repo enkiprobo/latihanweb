@@ -1,0 +1,35 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    text-transform: uppercase;
+    margin: 0;
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.samewidth {
+    margin: 0 auto;
+    padding: 0 25%;
+}
+.header {
+    text-align: center;
+    background-color: rgb(50, 20, 212);
+    height: 30%;
+}
+.control {
+    height: 3%;
+}
+#start {
+    float: left;
+}
+#easy, #hard {
+    float: right;
+}
+.board {
+    background-color: rgb(50, 50, 50);
+    height: 50%;
+}
+
