@@ -11,14 +11,19 @@
          <style type="text/css">
             #kotak {
                 background: blue;
-                padding-bottom: 40px;
-                /* padding-top: 40px; */
-                border: 2px solid black;
+                /* padding-bottom: 40%; */ /*kalau pakai ini, malah jadi ada heightnya*/
+                /* jadi pertanyaannya. data type persen(%), ngambil patokan dari mana? kalau di padding*/
+                /* sudah dicoba dan ternyata bukan datatypenya yang mempengaruhi tapi properties paddingnya
+                   paddingnya dapet nilai dari width parentnya */
+                height: 30%; /*Jika height dengan value % saja yang digunakan, maka tidak keluar ketinggiannya karena memang gitu cara kerjanya*/
+                /* border: 2px solid black; */
             }
          </style>
      </head>
      <body>
+         <!-- coba apakah kotaknya keluar jika menggunakan padding dan height dalam persen -->
          <h1>Hanya mencoba</h1>
-         <div id="kotak">content</div>
+         <div id="kotak"></div>
+         
      </body>
  </html>
