@@ -21,8 +21,8 @@ input.keypress(function(e){
 function refreshTodoList() {
     let deleteBtns = $(".delete");
     for(let i=0; i<deleteBtns.length; i++){
-        deleteBtns[i].onclick = function() {
-            $(this)[0].parentElement.remove();
+        deleteBtns[i].onclick = function() { // this isn't jQuery style, this is javascript style
+            $(this)[0].parentElement.remove(); // if i access parent element like this(using parentElement), it means i am accessing parent from plain javascript not from jQuery
         };
     }
     for(let todoP of $(".todo")) {

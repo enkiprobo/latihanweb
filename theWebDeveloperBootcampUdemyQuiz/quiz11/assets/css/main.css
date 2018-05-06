@@ -25,7 +25,7 @@ ul {
 .delete {
     /* display: inline-block; */ 
     text-align: center;
-    height: 100px;
+    height: 100px; /* why % doesn't work*/
 }
 li {
     list-style: none;
