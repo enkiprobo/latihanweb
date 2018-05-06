@@ -1,0 +1,42 @@
+body {
+    background-color: blue;
+    margin: 0;
+}
+p {
+    display: inline-block;
+    width: 94%;
+    padding-left: 1%;
+}
+.container {
+    max-width: 400px;
+    margin: 70px auto; /* margin use px because it fixed height. if using % it will calculate from parent width*/
+    background-color: white;
+}
+#newtodo {
+    width: 99%;
+    margin: 0;
+    padding-left: 1%;
+    border: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+.delete {
+    /* display: inline-block; */ 
+    text-align: center;
+    height: 100px;
+}
+li {
+    list-style: none;
+}
+.todo {
+    width: 80%;
+    word-wrap: break-word;
+}
+
+
+/* for selecting something */
+.done {
+    text-decoration: line-through;
+}
