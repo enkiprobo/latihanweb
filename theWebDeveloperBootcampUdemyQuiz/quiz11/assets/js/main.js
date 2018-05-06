@@ -19,17 +19,13 @@ input.keypress(function(e){
 });
 
 function refreshTodoList() {
-    let deleteBtns = $(".delete");
-    for(let i=0; i<deleteBtns.length; i++){
-        deleteBtns[i].onclick = function() { // this isn't jQuery style, this is javascript style
-            $(this)[0].parentElement.remove(); // if i access parent element like this(using parentElement), it means i am accessing parent from plain javascript not from jQuery
-        };
-    }
-    for(let todoP of $(".todo")) {
-        todoP.onclick = function(){
-            $(this)[0].classList.toggle("done");
-        }
-    }
+    $(".delete").click(function(){
+        $(this).parent().remove();
+    });
+    $(".todo").click(function(){
+        console.log("happy little things called love");
+        $(this).toggleClass("done"); // sometimes not working. The problem is not solved yet
+    });
 }
 function createTodo(todo) {
     return `
