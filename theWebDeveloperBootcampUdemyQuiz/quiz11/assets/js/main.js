@@ -1,37 +1,26 @@
-console.log("connected");
-
-const addSpan = $("#plus");
-const input = $("#newtodo");
-const ulList = $("ul");
-
-
-refreshTodoList();
-
-input.keypress(function(e){
-    let todo = $(this).val();
-    if(e.which === 13 && todo !== ""){
-        let newTodo = createTodo(todo);
-        ulList.append(newTodo);
-        input.val("");
-
-        refreshTodoList();
+$("input").keypress(function(e){
+    let value = $(this).val();
+    if (e.which === 13 && value !== "") {
+        createNewTodo(value);
+        $(this).val("");
     }
 });
 
-function refreshTodoList() {
-    $(".delete").click(function(){
-        $(this).parent().remove();
-    });
-    $(".todo").click(function(){
-        console.log("happy little things called love");
-        $(this).toggleClass("done"); // sometimes not working. The problem is not solved yet
-    });
-}
-function createTodo(todo) {
-    return `
-        <li>
-            <button class="delete">delete</button>
-            <p class="todo">${todo}</p>
-        </li>
-    `; //ES6's template strings
+$("ul").on("click", "li", function(){
+    $(this).toggleClass("clicked");
+});
+
+$("#hideid").click(function(){
+    $("input").fadeToggle();
+});
+
+$("ul").on("click", ".delete", function(){
+    console.log($(this).parent().remove());
+    $(this).parent().remove();
+});
+
+const createNewTodo = function(todo){
+    $("ul").append(`
+        <li><span class="delete">D</span>${todo}</li>
+    `);
 }
