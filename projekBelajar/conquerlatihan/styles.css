@@ -1,0 +1,126 @@
+/* #region reset*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+}
+/* #endregion */
+
+/* #region navigation */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    position: fixed;
+}
+span {
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+}
+ul {
+    margin-top: 10px;
+    background-color: #383E4C;
+    color: white;
+    list-style: none;
+    width: 96%;
+
+    display: none;
+}
+li {
+    font-family: sans-serif;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+li:last-of-type {
+    border-bottom-width: 0;
+}
+/* #endregion */
+
+/* #region header */
+header {
+    width: 100%;
+    height: 474px;
+    background-image: url("./images/bg-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Open Sans",Helvetica,Arial,sans-serif!important;
+    color: white;
+}
+h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 55px;
+    text-shadow: 2px 2px 2px black;
+
+    text-align: center;
+}
+h2 {
+    font-weight: normal;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px black;
+
+    text-align: center;
+}
+/* #endregion */
+
+/* #region content section */
+.content-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 30px;
+}
+.content {
+    text-align: center;
+    background-color: #F2F2F2;
+}
+.content h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+.content p {
+    text-align: center;
+    padding: 0 20px;
+}
+.content button {
+    margin: 20px;
+}
+.row1 {
+    width: 100%;
+    margin: 20px auto;
+    max-width: 360px;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+/* #endregion */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: black;
+    }
+}
+@media only screen and (min-width: 768px)  {
+    body {
+        background-color: blue;
+    }
+}
+
+
+
