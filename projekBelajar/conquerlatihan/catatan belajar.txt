@@ -1,0 +1,7 @@
+work flow pengerjaan:
+    1. kotak-kotakkan dari mockupnya(benar-benar kotak2in loh)
+    2. buat seluruh htmlnya(jangan sentuh cssnya dulu)
+    3. Buat cssnya - tapi layouting dulu(jangan sentuh bagian warna, typography dll)
+    4. Buat cssnya - typography, warna
+    5. buat cssnya - rapihkan cssnya
+NOTE : jika ingin membuat responsive layout -> mulai dari mobile dulu lalu ke atasnya. Setiap device harus melalui langkah 3 sampai 5. Usahakan jangan rubah htmlnya.
