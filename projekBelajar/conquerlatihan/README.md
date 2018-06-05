@@ -8,6 +8,7 @@ Projek kecil untuk belajar, meniru sebuah template: [Conquer](https://www.free-c
 4. Buat cssnya - tapi layouting dulu(jangan sentuh bagian warna, typography dll). Cari yang mirip dulu
 5. Buat cssnya - typography, warna,
 6. buat cssnya - rapihkan cssnya
+
 NOTE : jika ingin membuat responsive layout -> mulai dari mobile dulu lalu ke atasnya. Setiap device harus melalui langkah 3 sampai 5. Usahakan jangan rubah htmlnya.
 
 ## Tips Baru 
