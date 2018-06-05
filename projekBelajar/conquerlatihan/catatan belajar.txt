@@ -19,5 +19,10 @@ Istilah baru yang dipelajari:
     - css @media
     - viewport unit -- vh, vw, vmax, vmin
     - import local ttf(font file) menggunakan @font-face nya css
+    - window.pageYOffset, element.offsetTop, element.offsetHeight
+    - window.resize event handler, window.onscroll event handler
+    - flexbox
 
 Kekurangan dari project yang dikerjakan:
+    - kode yang dibuat belum 'readable'
+    - belum ada animasi pada jsnya
