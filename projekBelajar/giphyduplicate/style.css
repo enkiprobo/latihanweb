@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    /* body tidak perlu height lagi? soalnya sudah otomatis */
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    width: 1040px;
+    margin: 0 auto;
+}
+header {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    text-transform: uppercase;
+
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+li {
+    padding: 10px;
+    border-bottom: 3px solid white;
+    margin-right: 5px;
+
+    cursor: pointer;
+}
+
+.action-menu button {
+    width: 70px;
+    height: 100%;
+
+    font-weight: 800;
+    background-color: #0cf;
+    border: none;
+    color: white;   
+
+    cursor: pointer;
+}
+.login {
+    width: 70px;
+    /* height: 100%; */
+
+    font-weight: 800;
+    background-color: #3E3E3E;
+    border: none;
+    color: white;   
+
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    margin: 5px 0;
+}
+.search-bar .logo{
+    flex: 15%;
+
+    display: none;
+}
+.fixed-search {
+    position: fixed;
+    top: 0;
+    width: 1040px;
+    margin: 0px auto;
+    padding: 5px 0;
+    background-color: #121212;
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+
+    flex: 85%;
+    height: 52px;
+}
+input[type="text"] {
+    flex: 92%;
+    height: 100%;
+}
+input[type="button"] {
+    flex: 8%;
+    height: 100%;
+}
+
+.action-gif {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 15px 0;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+.col-type-1 {
+    /* flex: 1; */
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+}
+.col-type-2 {
+    /* flex: 2; */
+    width: 49%
+}
+.container-column {
+    display: flex;
+    justify-content: space-between;
+}
+.container-column .col-type-1 {
+    width: 49.5%;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+.loading {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
