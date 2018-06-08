@@ -1,9 +1,7 @@
 ## Preview
-Preview 1:
-![preview1](./images/preview1.gif)
+Preview:
 
-Preview 2:
-![preview2](./images/preview2.gif)
+![preview 1](./images/preview1.gif)
 
 ## Deskripsi
 Projek belajar ini digunakan untuk melatih kemampuan asynchronous, *request* API dangan *ajax*, dan menggunakan *public* API yang tersedia secara gratis. *Public* API yang digunakan adalah [*Giphy API*](https://developers.giphy.com/). 

@@ -1,3 +1,8 @@
+## Preview
+Preview:
+
+![Preview 1](./images/preview1.gif)
+
 ## Deskripsi
 Projek kecil untuk belajar, meniru sebuah template: [Conquer](https://www.free-css.com/assets/files/free-css-templates/preview/page196/conquer/). Projek ini melatih kemampuan responsive web.
 
