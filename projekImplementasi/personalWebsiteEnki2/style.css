@@ -1,0 +1,214 @@
+/* #region general */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background: linear-gradient(
+        rgba(33, 33, 33, 0.50), 
+        rgba(33, 33, 33, 0.50)
+      ), url(./images/background.jpg);
+    background-position: 30% 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+/* #endregion general */
+/* #region header */
+    header {
+        width: 100%;
+        max-width: 375px;
+        margin: 0 auto;
+        padding-top: 108px;
+    }
+/* #endregion header */
+/* #region photo */
+.photo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 100%;
+    box-shadow: 4px 0 4px rgba(0, 0, 0, 0.2), 0 4px 4px rgba(0, 0, 0, 0.2), -4px 0 4px rgba(0, 0, 0, 0.2), 0 -4px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.photo img {
+    width: 100%;
+    height: auto;
+}
+/* #endregion photo */
+/* #region icon */
+.icon-container {
+    width: 100px;
+    margin: 2px auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+.icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+.icon img {
+    width: 100%;
+    height: auto;
+}
+.icon:hover {
+    border: 2px solid #4BA1F0;
+}
+#ic-linkedin {
+    background-color: #0077B5;
+}
+#ic-linkedin img {
+    margin: 1px 0 0 1px;
+}
+/* #endregion icon */
+/* #region nav-button */
+nav {
+    margin: 0 auto;
+    margin-top: 66px;
+    width: 100%;
+    height: 110px;
+    position: relative;
+}
+li {
+    list-style: none;
+    position: absolute;
+    display: flex;
+}
+li:nth-of-type(odd){
+    height: 100%;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+li:nth-of-type(1){
+    left: 13px;
+}
+li:nth-of-type(2){
+    top: 0;
+    width: 100%;
+    justify-content: center;
+}
+li:nth-of-type(3){
+    right: 13px;
+}
+li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 162px;
+    height: 38px;
+    background-color: #4f4f4f;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+li a:visited {
+    color: white;
+}
+li a:hover {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+}
+/* #endregion nav-button */
+/* #region information */
+.information-container {
+    margin: 35px auto 0;
+    padding: 16px 28px;
+    width: 100%;
+    /* max-width: 375px; */
+    height: 226px;
+    border-radius: 10px;
+    background-color: rgb(51, 51, 51, 0.2);
+}
+.information-container p{
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: normal;
+}
+/* #endregion information */
+/* #region footer */
+footer {
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+footer p{
+    color: white;
+}
+footer a:visited {
+    color: black;
+}
+/* #endregion footer */
+
+@media only screen and (min-width: 768px){
+    body {
+        background-position: center center;
+    }
+    /* #region header */
+    header {
+        padding-top: 170px;
+        max-width: 972px;
+    }
+    /* #endregion header */
+    /* #region nav-container */
+    .nav-container {
+        position: relative;
+        margin: 0 auto;
+        width: 640px;
+        height: 220px;
+    }
+    /* #endregion nav-container */
+    /* #region photos-container */
+    .photos-container {
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        text-align: center;
+    }
+    /* #endregion photos-container */
+    /* #region nav-button */
+    nav {
+        margin: 0;
+        height: 100%;
+    }
+    ul {
+        height: 100%;
+    }
+    li:nth-of-type(odd){
+        padding-bottom: 70px;
+    }
+    li:nth-of-type(1){
+        left: 13px;
+    }
+    li:nth-of-type(2){
+        top: 0;
+        width: 100%;
+        justify-content: center;
+    }
+    li:nth-of-type(3){
+        right: 13px;
+    }
+    /* #endregion nav-button */
+    /* #region information */
+    .information-container {
+        margin: 0;
+        padding: 55px 19px;
+        height: 186px;
+    }
+    .information-container p{
+        text-align: center;
+    }
+    /* #endregion information */
+}
