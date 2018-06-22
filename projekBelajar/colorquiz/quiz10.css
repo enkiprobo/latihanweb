@@ -1,0 +1,58 @@
+body {
+    background-color: #232323;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Montserrat", "Avenir";
+}
+h1 {
+    color: white;
+    text-align: center;
+    background-color: steelblue;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: normal;
+    letter-spacing: 2px;
+    padding: 20px 0;
+    transition: all 0.4s;
+
+}
+button {
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: steelblue;
+	letter-spacing: 1px;
+    height: 100%;
+    font-size: inherit;
+}
+.control {
+    text-align: center;
+    background-color: white;
+}
+#info {
+    display: inline-block; /* if there is only inline, it can't have plain height or width*/
+    width: 120px;
+}
+.selected {
+    background-color: steelblue;
+    color: white;
+}
+.playarea {
+    width: 60%;
+    margin: 20px auto;
+}
+.square {
+    background-color: pink;
+    padding-top: 30%;
+    width: 30%;
+    margin: 1.66%;
+    float: left;
+    border-radius: 10%;
+    transition: all 0.4s;
+}
+button:hover {
+    background-color: steelblue;
+    color: white;
+}
